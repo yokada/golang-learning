@@ -9,8 +9,12 @@ import (
 )
 
 /*
-
- */
+Usage example:
+	$ go run daytimetcpcli.go 98.175.203.200 13
+	57480 16-04-02 13:33:59 50 0 0 905.5 UTC(NIST) *
+You can find valid daytime server URLs and IP Addresses from here:
+	[ NIST Internet Time Service ]( http://tf.nist.gov/tf-cgi/servers.cgi )
+*/
 func main() {
 	flag.Parse()
 	args := flag.Args()
